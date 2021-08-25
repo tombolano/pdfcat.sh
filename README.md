@@ -37,7 +37,7 @@ If not set it will default to out.pdf.
 Set an option to a given value. See the **Configuration options** section for the available options.
 
 - `-p, --pdf <file> [ <options> ]`
-Add a PDF file with the corresponding options for `includecommand`. If options are not specified, the default options specified in the `defaultpdfpagesoptions` option will be used.
+Add a PDF file with the corresponding options for `\includepdf`. If options are not specified, the default options specified in the `defaultpdfpagesoptions` option will be used.
 
 - `-0, --section <name>`
 Add a section.
@@ -48,7 +48,7 @@ Add a subsection.
 - `-2, --subsubsection <name>`
 Add a subsubsection.
 
-Options -p, -0, -1, and -2 can be specified multiple times.
+Options `-O`, `-p`, `-0`, `-1`, and `-2` can be specified multiple times.
 
 ## Configuration options
 
@@ -57,7 +57,7 @@ The available configuration options are:
 - `compilationdir`: Directory for generating and compiling the tex file. The default is to create a temporary directory with `mktemp`.
 - `compilationdirremove`: Remove compilation directory at exit. Default: `true`.
 - `contentsname`: Name for the table of contents section.
-- `defaultpdfpagesoptions`: pdfpages package `includecommand` options. Default: `'pages=-'`.
+- `defaultpdfpagesoptions`: pdfpages package `\includepdf` command options. Default: `'pages=-'`.
 - `generatetoc`: Generate a table of contents. Default: `false`.
 - `geometryoptions`: Geometry package options.
 - `hyperrefoptions`: Hyperref package options. Default: `'colorlinks,linkcolor=blue'`.
@@ -68,7 +68,7 @@ The available configuration options are:
 - `outputfile`: Output filename. Default: `'out.pdf'`.
 - `pdfminorversion`: PDF minor version. Default: 7.
 
-The `input*` options also allow specifying a filename, for this, start the option with `@` and set the rest with the name of the file.
+The `input*` options also allow specifying a filename, for this, start the option with the character `@` and set the rest with the name of the file.
 
 
 ## Sourced usage
