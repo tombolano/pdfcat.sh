@@ -158,7 +158,7 @@ ${bold_begin}OPTIONS${bold_end}
 		section for the available options.
 
 	-p, --pdf ${ul_begin}file${ul_end} [ ${ul_begin}options${ul_end} ]
-		Add a PDF file with the corresponding options for \includecommand.
+		Add a PDF file with the corresponding options for \includepdf.
 		If options are not specified, the default options specified in the
 		${bold_begin}defaultpdfpagesoptions${bold_end} option will be used.
 	
@@ -171,7 +171,7 @@ ${bold_begin}OPTIONS${bold_end}
 	-2, --subsubsection ${ul_begin}name${ul_end}
 		Add a subsubsection.
 
-	Options -p, -0, -1, and -2, can be specified multiple times.
+	Options -O, -p, -0, -1, and -2 can be specified multiple times.
 
 ${bold_begin}CONFIGURATION OPTIONS${bold_end}
 	The available configuration options are:
@@ -180,7 +180,7 @@ ${bold_begin}CONFIGURATION OPTIONS${bold_end}
 	  to create a temporary directory with mktemp.
 	* ${bold_begin}compilationdirremove${bold_end}: Remove compilation directory at exit. Default: true.
 	* ${bold_begin}contentsname${bold_end}: Name for the table of contents section.
-	* ${bold_begin}defaultpdfpagesoptions${bold_end}: pdfpages package \includecommand options. Default: 'pages=-'.
+	* ${bold_begin}defaultpdfpagesoptions${bold_end}: pdfpages package \includepdf command options. Default: 'pages=-'.
 	* ${bold_begin}generatetoc${bold_end}: Generate a table of contents. Default: false.
 	* ${bold_begin}geometryoptions${bold_end}: Geometry package options.
 	* ${bold_begin}hyperrefoptions${bold_end}: Hyperref package options. Default: 'colorlinks,linkcolor=blue'.
@@ -192,7 +192,7 @@ ${bold_begin}CONFIGURATION OPTIONS${bold_end}
 	* ${bold_begin}pdfminorversion${bold_end}: PDF minor version. Default: 7.
 
 	The ${bold_begin}input*${bold_end} options also allow specifying a filename, for this, start
-	the option with '@' and set the rest with the name of the file.
+	the option with the character '@' and set the rest with the name of the file.
 
 ${bold_begin}SOURCED USAGE${bold_end}
 	pdfcat.sh also allows sourcing it into a bash script. The functionality
