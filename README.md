@@ -45,7 +45,7 @@ Add a section.
 - `-1, --subsection <name>`
 Add a subsection.
 
-- `-2, --subsection <name>`
+- `-2, --subsubsection <name>`
 Add a subsubsection.
 
 Options -p, -0, -1, and -2 can be specified multiple times.
